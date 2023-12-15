@@ -46,3 +46,7 @@ node_modules
 .yarn
 .swc
 dump.rdb
+
+
+
+src/app/api
