@@ -11,6 +11,8 @@ module.exports = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
+    domains: ["octopus-app-2ljpe.ondigitalocean.app"],
+
     remotePatterns: [
       {
         protocol: "http",
