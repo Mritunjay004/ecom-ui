@@ -11,18 +11,18 @@ const FooterNav = () => {
   const { product_categories } = useProductCategories()
 
   return (
-    <div className="border-t border-ui-border-base w-screen">
-      <div className="content-container flex flex-col">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
+    <div className="w-screen border-t border-ui-border-base">
+      <div className="flex flex-col content-container">
+        <div className="flex flex-col items-start justify-between py-40 gap-y-6 xsmall:flex-row">
           <div>
             <Link
               href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
+              className="uppercase txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
             >
               Medusa Store
             </Link>
           </div>
-          <div className="text-small-regular grid grid-cols-3 gap-x-10 md:gap-x-16">
+          <div className="grid grid-cols-3 text-small-regular gap-x-10 md:gap-x-16">
             {product_categories && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
@@ -56,7 +56,7 @@ const FooterNav = () => {
                           {c.name}
                         </Link>
                         {children && (
-                          <ul className="grid grid-cols-1 ml-3 gap-2">
+                          <ul className="grid grid-cols-1 gap-2 ml-3">
                             {children &&
                               children.map((child) => (
                                 <li key={child.id}>
@@ -139,9 +139,9 @@ const FooterNav = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
+        <div className="flex justify-between w-full mb-16 text-ui-fg-muted">
           <Text className="txt-compact-small">
-            © {new Date().getFullYear()} Medusa Store. All rights reserved.
+            © {new Date().getFullYear()} Gupta Traders. All rights reserved.
           </Text>
           <MedusaCTA />
         </div>

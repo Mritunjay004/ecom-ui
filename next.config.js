@@ -11,7 +11,11 @@ module.exports = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
-    domains: ["octopus-app-2ljpe.ondigitalocean.app"],
+    domains: [
+      "octopus-app-2ljpe.ondigitalocean.app",
+      "static.wixstatic.com",
+      "pahadi-street.s3.ap-south-1.amazonaws.com",
+    ],
 
     remotePatterns: [
       {

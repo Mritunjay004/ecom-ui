@@ -1,34 +1,36 @@
 import { Button, Heading } from "@medusajs/ui"
-import InteractiveLink from "@modules/common/components/interactive-link"
-import { Github } from "@medusajs/icons"
+import Image from "next/image"
+import Link from "next/link"
 
 const Hero = () => {
   return (
-    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
+    <div className="relative h-[75vh] w-full border-b border-ui-border-base">
+      <Image
+        src="https://static.wixstatic.com/media/ad420a_49acd0b6db4e4e58a2f753c9abcb2e10~mv2_d_3818_2546_s_4_2.jpg/v1/fill/w_1960,h_1502,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ad420a_49acd0b6db4e4e58a2f753c9abcb2e10~mv2_d_3818_2546_s_4_2.jpg"
+        fill
+        className="object-cover"
+        quality={100}
+        alt="Background Image"
+      />
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-6 text-center small:p-32">
         <span>
           <Heading
             level="h1"
-            className="text-3xl leading-10 text-ui-fg-base font-normal"
+            className="text-3xl font-bold leading-10 text-white"
           >
-            Ecommerce Starter Template
+            PAHADI STREET
           </Heading>
           <Heading
             level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal"
+            className="text-3xl font-normal leading-10 text-white"
           >
-            Powered by Medusa and Next.js
+            EMBRACE FRESHNESS AND PURITY OF THE HILLS
           </Heading>
         </span>
-        <a
-          href="https://github.com/medusajs/nextjs-starter-medusa"
-          target="_blank"
-        >
-          <Button variant="secondary">
-            View on GitHub
-            <Github />
-          </Button>
-        </a>
+
+        <Link href="/store">
+          <Button variant="secondary">Order Online</Button>
+        </Link>
       </div>
     </div>
   )
