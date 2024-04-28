@@ -8,7 +8,7 @@ import MedusaCTA from "../medusa-cta"
 
 const FooterNav = () => {
   const { collections } = useCollections()
-  const { product_categories } = useProductCategories()
+  // const { product_categories } = useProductCategories()
 
   return (
     <div className="w-screen border-t border-ui-border-base">
@@ -19,11 +19,12 @@ const FooterNav = () => {
               href="/"
               className="uppercase txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
             >
-              Medusa Store
+              Pahadi Street
             </Link>
           </div>
+
           <div className="grid grid-cols-3 text-small-regular gap-x-10 md:gap-x-16">
-            {product_categories && (
+            {/* {product_categories && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
                   Categories
@@ -75,7 +76,8 @@ const FooterNav = () => {
                   })}
                 </ul>
               </div>
-            )}
+            )} */}
+
             {collections && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
@@ -102,8 +104,9 @@ const FooterNav = () => {
                 </ul>
               </div>
             )}
+
             <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">Medusa</span>
+              <span className="txt-small-plus txt-ui-fg-base">Help</span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
@@ -112,7 +115,7 @@ const FooterNav = () => {
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    GitHub
+                    Store Policy
                   </a>
                 </li>
                 <li>
@@ -122,7 +125,7 @@ const FooterNav = () => {
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Documentation
+                    Shipping & Returns
                   </a>
                 </li>
                 <li>
@@ -132,13 +135,14 @@ const FooterNav = () => {
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Source code
+                    FAQ
                   </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+
         <div className="flex justify-between w-full mb-16 text-ui-fg-muted">
           <Text className="txt-compact-small">
             © {new Date().getFullYear()} Gupta Traders. All rights reserved.
