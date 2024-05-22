@@ -28,7 +28,7 @@ export default async function Home() {
 
 const Info = () => {
   return (
-    <div className="bg-[#FBF9F3] flex flex-col items-center justify-between mt-12 content-container md:flex-row ">
+    <div className="bg-[#FBF9F3] flex flex-col items-center justify-around py-12 px-4 sm:px-0  md:flex-row">
       <div className="w-full md:w-[40%]">
         <h2 className="mb-2 text-2xl font-bold">
           Pahadi Street - Your Gateway to Authentic Jammu and Kashmir products
@@ -54,13 +54,7 @@ const Info = () => {
 
       {/* image */}
       <div className="w-full md:w-[40%]">
-        <Image
-          src="/hut.png"
-          alt="Hut"
-          width={400}
-          height={400}
-          className="bg-[#FBF9F3] object-cover rounded-lg"
-        />
+        <Image src="/hut.png" alt="Hut" width={500} height={500} />
       </div>
     </div>
   )
