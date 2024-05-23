@@ -10,7 +10,6 @@ import Autoplay from "embla-carousel-autoplay"
 function Hero() {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
 
-  // image urls
   const images = [
     "https://static.wixstatic.com/media/ad420a_66bb032f4e6e4ab6adf8d2642f5000e0~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_3024,h_1502,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ad420a_66bb032f4e6e4ab6adf8d2642f5000e0~mv2_d_5472_3648_s_4_2.jpg",
     "https://static.wixstatic.com/media/ad420a_49acd0b6db4e4e58a2f753c9abcb2e10~mv2_d_3818_2546_s_4_2.jpg/v1/fill/w_1960,h_1502,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ad420a_49acd0b6db4e4e58a2f753c9abcb2e10~mv2_d_3818_2546_s_4_2.jpg",
@@ -29,6 +28,7 @@ function Hero() {
               alt="Home Page Banner"
               width={3024}
               height={1502}
+              priority
             />
           </div>
         ))}
