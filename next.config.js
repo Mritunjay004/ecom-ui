@@ -7,6 +7,8 @@ module.exports = withStoreConfig({
       "@medusajs/product",
       "@medusajs/modules-sdk",
     ],
+
+    missingSuspenseWithCSRBailout: false,
   },
   features: store.features,
   reactStrictMode: true,
