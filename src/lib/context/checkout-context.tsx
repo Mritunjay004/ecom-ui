@@ -9,6 +9,7 @@ import {
   StorePostCartsCartReq,
 } from "@medusajs/medusa"
 import Wrapper from "@modules/checkout/components/payment-wrapper"
+import Spinner from "@modules/common/icons/spinner"
 import { isEqual } from "lodash"
 import {
   formatAmount,
@@ -23,7 +24,6 @@ import { useRouter } from "next/navigation"
 import React, { createContext, useContext, useEffect, useMemo } from "react"
 import { FormProvider, useForm, useFormContext } from "react-hook-form"
 import { useStore } from "./store-context"
-import Spinner from "@modules/common/icons/spinner"
 
 type AddressValues = {
   first_name: string
@@ -235,6 +235,7 @@ export const CheckoutProvider = ({ children }: CheckoutProviderProps) => {
       await initPayment()
     }
     start()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cart?.region, cart?.id, cart?.items])
 
   /**
