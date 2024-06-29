@@ -10,27 +10,27 @@ import SubmitSpinner from "../components/submit-spinner"
 const CheckoutTemplate = () => {
   return (
     <CheckoutProvider>
-      <div className="bg-white relative small:min-h-screen">
+      <div className="relative bg-white small:min-h-screen">
         <SubmitSpinner />
         <div className="h-16 bg-white">
-          <nav className="flex items-center h-full justify-between content-container border-b">
+          <nav className="flex items-center justify-between h-full border-b content-container">
             <Link
               href="/cart"
-              className="text-small-semi text-gray-700 flex items-center gap-x-2 uppercase flex-1 basis-0"
+              className="flex items-center flex-1 text-gray-700 uppercase text-small-semi gap-x-2 basis-0"
             >
               <>
                 <ChevronDown className="rotate-90" size={16} />
-                <span className="mt-px hidden small:block txt-compact-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase">
+                <span className="hidden mt-px uppercase small:block txt-compact-plus text-ui-fg-subtle hover:text-ui-fg-base">
                   Back to shopping cart
                 </span>
-                <span className="mt-px block small:hidden">Back</span>
+                <span className="block mt-px small:hidden">Back</span>
               </>
             </Link>
             <Link
               href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
+              className="uppercase txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
             >
-              Medusa Store
+              Pahadi Street
             </Link>
             <div className="flex-1 basis-0" />
           </nav>
@@ -42,7 +42,7 @@ const CheckoutTemplate = () => {
             <CheckoutSummary />
           </div>
         </div>
-        <div className="py-4 w-full flex items-center justify-center">
+        <div className="flex items-center justify-center w-full py-4">
           <MedusaCTA />
         </div>
       </div>

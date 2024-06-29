@@ -109,34 +109,19 @@ const FooterNav = () => {
               <span className="txt-small-plus txt-ui-fg-base">Help</span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
-                  <a
-                    href="https://github.com/medusajs"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Store Policy
-                  </a>
+                  <Link href="/help/contact" className="hover:text-ui-fg-base">
+                    Contact Us
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://docs.medusajs.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Shipping & Returns
-                  </a>
+                  <Link href="/help/terms" className="hover:text-ui-fg-base">
+                    Terms and Conditions
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    FAQ
-                  </a>
+                  <Link href="/help/refunds" className="hover:text-ui-fg-base">
+                    Refund and Cancellation
+                  </Link>
                 </li>
               </ul>
             </div>
